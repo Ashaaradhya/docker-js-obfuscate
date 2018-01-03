@@ -5,5 +5,5 @@ RUN pip install unidecode slimit && \
     echo '#!/usr/bin/env python' | cat - garble.py > temp && mv temp /usr/bin/garble.py && \
     cd /usr/bin && chmod -x garble.py && cd /
 
-ADD ./ofuscate.sh /usr/bin/ofuscate
-RUN chmod +x /usr/bin/ofuscate
+ADD ./obfuscate.sh /usr/bin/obfuscate
+RUN chmod +x /usr/bin/obfuscate
